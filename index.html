@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vishal | Booth's Algorithm Multiplier</title>
+	<link href="http://www.grahn.us/css/projects.css" media="screen" rel="stylesheet" type="text/css"/>
+	<link href="style.css" media="screen" rel="stylesheet" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <img src="b.png" alt="" class="bg">
+    </div>
+	<div>
+		<h1 class="font-extrabold text-xl pt-10 pl-10 text-white text-5xl"><a href="https://vishalvimal.github.io/Website-using-Css/"> <span class="hover:text-green-500 rounded">Vishal</span> </a></h1>
+	</div>	
+	<div class="pl-10">
+		<h2 class="text-md font-bold text-white text-3xl pt-10 pb-5">Binary Multiplication Using <span class="text-yellow-500">Booth's Algorithm.</span></h2>
+		<p class="text-white text-2xl">Enter any <span class="text-yellow-300">two integer</span>  numbers into the form and click <span class="text-yellow-300"> 'Multiply'</span> to watch Booth's algorithm run its magic.</p>
+	</div>
+	</aside>
+	<div id="content ">
+		<div >
+			<h3 class="text-white pl-10 pt-20 pb-10 font-bold text-2xl ">Input</h3>
+		</div>
+		<form class="">
+            <div class="pl-10 flex">
+				<div>
+					<input class="rounded h-9 w-56 text-xl items-center justify-center " type="text" name="factor1"/><span class="text-white pl-5 font-extrabold text-2xl">x</span>
+				</div>
+            	<div class="pl-5">	
+					<input class="rounded h-9 w-56 text-xl items-center justify-center " type="text" name="factor2"/>
+				</div>
+				<div class="pl-10">
+					<input class="rounded h-9 w-24 cursor-pointer font-extrabold bg-green-500 text-xl " type="button" name="multiply" value="Multiply"/>
+				</div>
+            </div>
+		
+		</form>
+		
+		<h3 class="text-white pl-10 pt-10 text-2xl font-bold ">Result</h3>
+		<div class="pl-10 pt-5 ">
+			<table id="results" class="text-white ">
+				<thead>
+					<tr >
+						<div>
+							<th class="border-solid border-2 border-sky-500 w-20">A</th>
+						</div>
+						<div class="pl-5">
+							<th class="pl-5 w-20 border-solid border-2 border-sky-500 ">Q</th>
+						</div>
+						<div class="pl-5">
+							<th class="pl-5 w-20 border-solid border-2 border-sky-500 ">Q<sub>-1</sub></th>
+						</div>
+						<div class="pl-5">
+							<th class="pl-5 w-20 border-solid border-2 border-sky-500 ">M</th>
+						</div>
+						<div class="pl-5">
+							<th class="pl-5 w-40 border-dotted border-2	 border-sky-500">Log</th>
+						</div>
+					</tr>
+				</thead>
+				<tbody class="items-center justify-center text-xl ">
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
